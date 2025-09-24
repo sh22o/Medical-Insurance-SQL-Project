@@ -33,11 +33,10 @@ This project uses a medical insurance dataset (1,338 records) to practice SQL ba
 ## 💻 Example SQL Queries
 
 ### 1️⃣ Explore Data
-```sql
 -- Show first 10 rows
 SELECT * FROM insurance LIMIT 10;
 
--- Count rows
+-- Count total rows
 SELECT COUNT(*) FROM insurance;
 
 -- Check for NULL or empty values
@@ -48,32 +47,22 @@ WHERE age IS NULL OR age = ''
    OR charges IS NULL OR charges = ''
    OR children IS NULL OR children = ''
    OR region IS NULL OR region = ''
-   OR gender IS NULL OR gender = ''
-   OR smoker IS NULL OR smoker = '';
+   OR sex IS NULL OR sex = ''
+   OR smoker IS NULL OR smoker = ''; 
+
 --- 
-2️⃣ Rename Column
+
+###2️⃣ Rename Column 
+-- Rename 'sex' column to 'gender'
 ALTER TABLE insurance
 RENAME COLUMN sex TO gender;
 
-3️⃣ Create New Table with id
-CREATE TABLE insurance_with_id AS
-SELECT ROW_NUMBER() OVER () AS id, * 
-FROM insurance;
+-- Verify change
+SELECT gender FROM insurance; 
 
-4️⃣ INSERT Example
-INSERT INTO insurance_with_id
-(id, age, gender, bmi, children, smoker, region, charges)
-VALUES
-(2000, 30, 'female', 26.5, 1, 'no', 'southeast', 4200);
 
-5️⃣ UPDATE Example
-UPDATE insurance_with_id
-SET smoker = 'yes'
-WHERE id = 2000;
 
-6️⃣ DELETE Example
-DELETE FROM insurance_with_id
-WHERE id = 2000;
+
 
 
 
