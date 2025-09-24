@@ -55,7 +55,7 @@ WHERE age IS NULL OR age = ''
 
 --- 
 
-###2️⃣ Rename Column 
+### 2️⃣ Rename Column 
 ```sql
 -- Rename 'sex' column to 'gender'
 ALTER TABLE insurance
@@ -67,7 +67,7 @@ SELECT gender FROM insurance;
 ```
 
 --- 
-###3️⃣ Add an ID Column 
+### 3️⃣ Add an ID Column 
 ```sql
 -- Create a new table with auto-generated ID
 CREATE TABLE insurance_with_id AS
@@ -81,7 +81,7 @@ SELECT COUNT(id) FROM insurance_with_id;
 SELECT * FROM insurance_with_id LIMIT 10;
 ```
 --- 
-###4️⃣ CRUD Operations  
+### 4️⃣ CRUD Operations  
 ## ➕ INSERT
 ```sql
 INSERT INTO insurance_with_id
@@ -89,7 +89,7 @@ INSERT INTO insurance_with_id
 VALUES (25, 'female', 26.5, 2, 'no', 'Egypt', 5400.75);
 ```
 --- 
-##✏️ UPDATE 
+## ✏️ UPDATE 
 ```sql
 UPDATE insurance_with_id
 SET region = 'North Africa'
@@ -97,7 +97,7 @@ WHERE id = 101;
  
 ```
 --- 
-##🗑️ DELETE 
+## 🗑️ DELETE 
 
 ```sql
 DELETE FROM insurance_with_id
