@@ -112,11 +112,11 @@ WHERE id = 2;
    ```
    --- 
 2-**Open your SQL environment**
-You can use any tool like SQLite, MySQL Workbench, DBeaver, or PostgreSQL. 
+- You can use any tool like SQLite, MySQL Workbench, DBeaver, or PostgreSQL. 
 --- 
 
 3-**Import the dataset**
-Load the insurance.csv file
+- Load the insurance.csv file
 --- 
    
 ## 🙋‍♀️ About Me
