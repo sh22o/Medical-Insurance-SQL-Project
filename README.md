@@ -103,8 +103,29 @@ WHERE id = 101;
 DELETE FROM insurance_with_id
 WHERE id = 2;
 ```
+---  
+## 🚀 How to Use This Project
+
+1. **Clone or download the repository**
+   ```bash
+   git clone https://github.com/<your-username>/Medical-Insurance-SQL-Project.git
+   ```
+   --- 
+2-**Open your SQL environment**
+You can use any tool like SQLite, MySQL Workbench, DBeaver, or PostgreSQL. 
 --- 
 
+3-**Import the dataset**
+Load the insurance.csv file
+--- 
+   
+## 🙋‍♀️ About Me
+**Shereen Wagdy**  
+📩 Email: shereenwagdy214@gmail.com  
+💼 Role: Junior Data & Product Analyst — SQL • Data Cleaning • CRUD Operations  
+
+I’m passionate about turning raw data into meaningful insights.  
+This project was created to practice real SQL skills, including data exploration, cleaning, table restructuring, and CRUD operations, on a medical insurance dataset.
 
 
 
@@ -113,4 +134,4 @@ WHERE id = 2;
 
 
 
-
+-
