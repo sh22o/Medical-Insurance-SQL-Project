@@ -51,6 +51,30 @@ WHERE age IS NULL OR age = ''
    OR gender IS NULL OR gender = ''
    OR smoker IS NULL OR smoker = '';
 --- 
+2️⃣ Rename Column
+ALTER TABLE insurance
+RENAME COLUMN sex TO gender;
+
+3️⃣ Create New Table with id
+CREATE TABLE insurance_with_id AS
+SELECT ROW_NUMBER() OVER () AS id, * 
+FROM insurance;
+
+4️⃣ INSERT Example
+INSERT INTO insurance_with_id
+(id, age, gender, bmi, children, smoker, region, charges)
+VALUES
+(2000, 30, 'female', 26.5, 1, 'no', 'southeast', 4200);
+
+5️⃣ UPDATE Example
+UPDATE insurance_with_id
+SET smoker = 'yes'
+WHERE id = 2000;
+
+6️⃣ DELETE Example
+DELETE FROM insurance_with_id
+WHERE id = 2000;
+
 
 
 
