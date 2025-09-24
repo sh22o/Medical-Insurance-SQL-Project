@@ -108,8 +108,8 @@ WHERE id = 2;
 
 1. **Clone or download the repository**
    ```bash
-   git clone https://github.com/<your-username>/Medical-Insurance-SQL-Project.git
-   ```
+   https://github.com/sh22o/Medical-Insurance-SQL-Project.git
+```
    --- 
 2-**Open your SQL environment**
 - You can use any tool like SQLite, MySQL Workbench, DBeaver, or PostgreSQL. 
